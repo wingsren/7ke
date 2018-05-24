@@ -31,7 +31,7 @@
 			html2canvas(document.querySelector("#savearea")).then(function(canvas){
 				document.querySelector("#h5canvas").appendChild(canvas);
 				var oCanvas = document.getElementsByTagName("canvas")[0];
-				var oImgPng = Canvas2Image.saveAsPNG(oCanvas,true);
+				var oImgPng = Canvas2Image.saveAsPNG(oCanvas);
 				document.getElementById("h5img").appendChild(oImgPng);
 				$('.info').show();
 				if($('.info').is(":visible")){
